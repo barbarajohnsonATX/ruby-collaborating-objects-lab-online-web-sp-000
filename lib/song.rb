@@ -1,4 +1,4 @@
-leclass Song 
+class Song 
   attr_accessor :artist, :name
   
  def initialize(name)
@@ -13,10 +13,8 @@ leclass Song
 
   def self.new_by_filename(file_name)
     title = file_name.split(" - ")[1]
-≈    new_song = self.new(title)
-    new_song.artist_name = artist
-    new_song
-  end
+    artist = file_name.split(" - ")[0]
+    new_song = self.new(title)
  
     
  
