@@ -7,7 +7,7 @@ class MP3Importer
   end 
   
   def files
-    files_array = Dir.entries(@path)
+    @files_array = Dir.entries(@path)
     @mp3_array = []
     files_array.each do |file|
       if file.include?(".mp3") 
