@@ -25,14 +25,14 @@ class Artist
   end 
   
   def find_or_create_by_name(name)
-    @@all.detect do |artist| 
-      if artist.name == nil
-        artist.name = name 
-      end 
-    end 
-    return self 
-     
+    if @@all.detect {|artist| artist.name == name}
+        return artist 
+    else 
+      new_artist = self.new
+      new_artist.name = name 
     
+      return new_artist
+    end 
   end 
   
 end 
