@@ -7,6 +7,6 @@ class MP3Importer
   end 
   
   def files(filepath)
-    DIR.
+    files_array = Dir.entries(filepath)
   end 
 end 
