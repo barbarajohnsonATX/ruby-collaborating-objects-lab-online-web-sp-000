@@ -9,13 +9,11 @@ class Song
  
  
  
- def artist=(artist)
-   @artist = artist 
- end 
- 
- #def artist_name=(name)
-  # @artist.name = name 
+ #def artist=(artist)
+ #  @artist = artist 
 # end 
+ 
+
  
  def self.new_by_filename(filename) 
     title_artist = filename.split(" - ")
