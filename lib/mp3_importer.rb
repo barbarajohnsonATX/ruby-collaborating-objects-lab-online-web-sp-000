@@ -6,8 +6,8 @@ class MP3Importer
     
   end 
   
-  def files(filepath)
-    files_array = Dir.entries(filepath)
+  def files
+    files_array = Dir.entries(@path)
     mp3_array = []
     files_array.map do |file|
       if file.include?(".mp3") 
