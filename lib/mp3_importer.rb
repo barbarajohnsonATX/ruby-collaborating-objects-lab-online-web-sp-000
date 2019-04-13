@@ -17,4 +17,7 @@ class MP3Importer
     mp3_array
   end 
   
+  def import 
+    Son
+    
 end 
