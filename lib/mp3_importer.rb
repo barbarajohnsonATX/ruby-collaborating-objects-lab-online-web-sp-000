@@ -8,13 +8,13 @@ class MP3Importer
   
   def files
     files_array = Dir.entries(@path)
-    mp3_array = []
+    @mp3_array = []
     files_array.each do |file|
       if file.include?(".mp3") 
-        mp3_array << file 
+        @mp3_array << file 
       end 
     end 
-    mp3_array
+    @mp3_array
   end 
   
   def import 
