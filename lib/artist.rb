@@ -31,7 +31,7 @@ class Artist
       end 
     end 
     return self 
-    end 
+     
     
   end 
   
