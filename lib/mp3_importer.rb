@@ -8,6 +8,7 @@ class MP3Importer
   
   def files(filepath)
     files_array = Dir.entries(filepath)
-    files_array.collect {|file| file.
+    files_array.collect {|file| file.include?(".mp3") }
+    
   end 
 end 
