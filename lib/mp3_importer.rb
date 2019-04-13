@@ -18,8 +18,8 @@ class MP3Importer
   end 
   
   def import 
-    mp3_array = self.files 
-    mp3_array.each {|file| Song.new_by_filename(file) }
+    @mp3_array = self.files 
+    @mp3_array.each {|file| Song.new_by_filename(file) }
   end 
     
 end 
