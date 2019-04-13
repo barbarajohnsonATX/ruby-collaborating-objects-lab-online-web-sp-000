@@ -25,9 +25,12 @@ class Artist
   end 
   
   def find_or_create_by_name(name)
-    @@all.each {|artist|
-    if self.name == nil 
-      self.name = name 
+    @@all.each do |artist|
+      if self.name == nil 
+        self.name = name 
+      end 
+    end 
+    return self 
     end 
     
   end 
