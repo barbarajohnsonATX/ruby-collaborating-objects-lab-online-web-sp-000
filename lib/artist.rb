@@ -29,8 +29,7 @@ class Artist
     if found 
       return found 
     else 
-      new_artist = self.new
-      new_artist.name = name 
+      new_artist = self.new(name)
       new_artist.save 
       new_artist
     end 
